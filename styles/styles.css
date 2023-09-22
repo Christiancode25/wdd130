@@ -1,5 +1,5 @@
 nav{
-    background-color: steelblue;
+    background-color: #ff5733;
     padding:10px
 }
 nav a{
@@ -8,12 +8,12 @@ nav a{
     padding:20px;
 }
 h1{
-    color:steelblue;
+    color: #33a1de;;
 }
 img{
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid #4caf50;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -22,7 +22,7 @@ p{
 }
 aside {
     margin: 1em;
-    border: 1px solid rga (0,0,0,0.2); /* 1 */
+    border: 1px solid #4169E1;
     padding: 1em;
     background-color: #eee;
     color: #333;
