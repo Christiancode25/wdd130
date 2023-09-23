@@ -5,8 +5,8 @@
     --accent1-color:#8a84e2;
     --accent2-color:#84afe6;
 
-    --heading-font:'Roboto&family', san-serif;
-    --paragraph-font:'Robot&family', san-serif;
+    --heading-font:'Roboto', san-serif;
+    --paragraph-font:'Roboto', san-serif;
 
     --navigation-bg-color: #333; 
     --navigation-link-color: #FFF; 
@@ -17,7 +17,7 @@
   
   body {
     font-family: var(--paragraph-font); 
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
   }
   
   h1, h2, h3, h4, h5, h6 {
