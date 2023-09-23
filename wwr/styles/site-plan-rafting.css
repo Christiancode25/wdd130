@@ -14,7 +14,7 @@
     --navigation-hover-bg-color: slategray; 
   }
   body {
-    font-family: var(--paragraph-font);
+    font-family: var(--primary-colors);
     max-width: 960px;
     padding: 20px;
   }
