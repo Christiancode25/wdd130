@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital@1&display=swap');
+:root{
+    --primary-color: #b7d3f2;
+    --secondary-color: #afafdc;
+    --accent1-color: #8a84e2;
+    --accent2-color: #84afe6;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto Condensed', sans-serif;
+
+    --nav-background-color:  #e1effa;
+    --nav-link-color:  #333333;
+    --nav-hover-link-color: #222222;
+    --nav-hover-background-color: #b7d3f2;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color:var(--nav-link-color)
+    text-decoration none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color:var(--nav-link-color)
+}
+nav a:hover {
+    color: var(--nav-hover-background-color)
+    background-color var(--nav-hover-background-color)
+}
