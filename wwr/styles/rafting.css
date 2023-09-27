@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital@0;1&display=swap');
+:root {
+    --primary-color: #0099cc;
+    --seconday-color:#f0f0f0;
+    --text-color: #333;
+}
+
+/* Apply a reset for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+/* styling the headings and paragraph */
+h1 {
+    font-family: Oswald,sans-serif,serif;
+    font-size: 36;
+    font-weight: bold;
+    color:var(--primary-color);
+}
+h2 {
+    font-family: serif, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+P {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.sociallinks a {
+    text-decoration: none;
+}
+
+
+
