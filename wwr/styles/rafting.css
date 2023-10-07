@@ -4,212 +4,209 @@
     --seconday-color:#f0f0f0;
     --text-color: #333;
     --heading-font: 'Oswald' sans-serif;
-    --paragraph-font: 'serif' sans-serif;
-
+    --paragraph-font: 'serif' sans-serif;   
 }
-/* Apply a reset for consistency */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'oswald', sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+  max-width: 1200px; /* Adjust the value as needed */
+  margin: 0 auto;
+  padding: 20px;
 }
-
-/* Header Styles */
+h1 {
+  font-family: oswald, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--seconday-color);
+}
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0099cc ;
+}
+section p {
+  font-family:'Times New Roman', Times, serif;
+  color:black
+}
+.hero {
+  position: relative;
+  
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1 {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}
+article {
+  position: absolute;
+  bottom: 120px;
+  background-color: #0099cc;
+  opacity: 80%;
+}
+article img {
+  float: right;
+  height: 200px;
+  opacity: 50%;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.sociallinks {
+  display:flex
+}
+.sociallinks a{
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+}
 header {
-    background-color: var(--primary-color);
-    color: var(--seconday-color);
-    padding: 20px;
-    text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
 }
-
-header img {
-    width: 150px; 
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Two columns: auto for logo and 1fr for navigation */
+  align-items: center;
+  padding: 20px;
 }
-
-/* Navigation Styles */
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
 nav ul {
-    list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align navigation items to the right */
 }
-
 nav li {
-    display: inline;
-    margin-right: 20px;
+  margin-left: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--seconday-color);
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
-
-/* Main Content Styles */
-main {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px;
-}
-
-/* Heading Styles */
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 20px; 
-}
-
-/* Paragraph Styles */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-/* Social Media Link Styles */
-.sociallinks a {
-    text-decoration: none;
-}
-
-/* Footer Styles */
 footer {
-    background-color: var(--primary-color);
-    color: var(--seconday-color);
-    text-align: center;
-    padding: 10px;
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Horizontal layout with space between logo and nav */
+  align-items: center;
+  padding: 20px;
 }
 
-/* Style social media icons in the footer */
-.sociallinks img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Remove underlines from social media links */
-.sociallinks a {
-    text-decoration: none;
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for the navigation list */
 }
 
-/* Hero Styles */
-.hero {
-    position: relative;
+.nav-list li {
+  margin-right: 20px; /* Add spacing between navigation items */
 }
 
-/* Absolute positioning for h1 and article */
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    color: var(--seconday-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1;
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+}
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-    color: var(--seconday-color);
-    z-index: 1;
-    max-width: 70%; 
-}
-
-/* Style the hero image */
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-article img {
-    float: right;
-}
-/* Header styles using CSS Grid */
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px 0; 
+  text-align: center; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+nav ul li:last-child {
+  margin-right: 0; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; 
+  font-weight: bold; 
+  transition: color 0.3s; 
+}
+nav a:hover {
+  color: #ff6600; 
+}
+@media screen and (max-width: 768px) {
+  header {
+      padding: 15px 0;
   }
-  
-  header img {
-    max-width: 100%;
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
   }
-  
-  /* Navigation styles using CSS Flexbox */
-  nav ul {
-    display: flex;
-    list-style: none;
+}
+.adventures-section {
+  background-color: #f4f4f4; 
+  padding: 40px 0; 
+  text-align: center; 
+}
+.adventures-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+figure {
+  margin: 10px; 
+  text-align: center; 
+}
+
+figcaption {
+  margin-top: 10px; 
+}
+@media screen and (max-width: 768px) {
+  .adventures-container {
+      flex-direction: column; 
+      align-items: center; 
   }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* History section styles using a simple layout method */
-  section {
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  section h2 {
-    font-size: 24px;
-  }
-  
-  section p {
-    font-size: 16px;
-  }
-  
-  /* Adventures section styles using CSS Grid */
-  section > h2:first-of-type {
-    margin-top: 30px;
-  }
-  
-  section img {
-    max-width: 100%;
-    margin-top: 10px;
-  }
-  
-  /* Footer styles using CSS Flexbox */
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .sociallinks {
-    display: flex;
-  }
-  
-  .sociallinks a {
-    margin-right: 10px;
-  }
-  
-  .sociallinks img {
-    width: 30px;
-    height: 30px;
-  }
+}
