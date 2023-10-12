@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HTML & CSS Quiz</title>
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <h1>HTML & CSS Quiz</h1>
+        <form action="quiz_submission_handler.php" method="post">
+            <!-- Question 1 (Text input) -->
+            <label for="q1">1. What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1" required>
+    
+            <!-- Question 2 (Textarea) -->
+            <label for="q2">2. Explain the difference between margin and padding in CSS. How do these properties affect the layout and spacing of HTML elements:</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+    
+            <!-- Question 3 (Select element) -->
+            <label for="q3">3.What is the primary purpose of the HTML div element in web development?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="a">a.to create hyperlinks</option>
+                <option value="b">b.to define a division or section in a document</option>
+                <option value="c">c.to style text and fonts</option>
+                <option value="d">d.to insert images into a webpage</option>
+            </select>
+    
+            <!-- Question 4 (Number input) -->
+            <label for="q4">4. How many heading levels are available in HTML?</label>
+            <input type="number" id="q4" name="q4" required>
+    
+            <!-- Submit button -->
+            <input type="submit" value="Submit Quiz">
+        </form>
+    </body>
+    </html>
