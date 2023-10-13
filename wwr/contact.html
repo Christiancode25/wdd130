@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <meta name="author" content="Christian Mendoza">
     <meta name="description" content="Christian Mendoza byu-idaho week05 Contact Us project">
+    <link rel="stylesheet" href="styles/contact.css">
     </head>
     <body>
         <header> <!-- HEADER part-->
@@ -24,31 +25,53 @@
           </div>
         </header>
         <main> <!-- Main Part-->
-          <div class="hero">
-            <img src="images/rafting1.jpg" alt="enjoying Rafting activities">
-            <h1>Life Adventure</h1>
-          </div>
-          <article>
-            <img src="images/rafting59_600.jpg" alt="happy families">
-            <p>At Life Adventure Rafting Company, our mission is to provide safe, unforgettable, and environmentally responsible rafting adventures for adventurers of all skill levels. We are committed to fostering a deep appreciation for the natural world while promoting teamwork, courage, and personal growth.</p>
-          </article>
-          <section class="adventures-section">
-            <h2>History</h2>
-            <div class="adventures-container">
-            <p>Over the years, Life Adventure Rafting expanded its operations to include trips on multiple rivers, ranging from the adrenaline-pumping Class V rapids of the Colorado River to the serene and scenic journeys down the peaceful stretches of the Salmon River. This expansion allowed the company to accommodate rafters of all skill levels, from novices to seasoned experts.</p>
-            <h2>Adventure Awaits You</h2>
-            <figure>
-            <img src="images/1_photo.jpg" alt="Life adventure 1"><figcaption>Enjoying the moment</figcaption></figure>
-            <figure>
-            <img src="images/2_photo.jpg" alt="Life Adventure 2"><figcaption>chill out</figcaption></figure>
-            <figure>
-            <img src="images/3_photo.jpg" alt="Life Adventure 3"><figcaption>relaxing</figcaption></figure>
-            <figure>
-            <img src="images/4_photo.jpg" alt="Life Adventure 4"><figcaption>thrilling Adventure</figcaption></figure>
-            <figure>
-            <img src="images/5_photo.jpg" alt="Life Adventure 5"><figcaption>learn to Rafting</figcaption></figure>
-            </div>
+          <main>
+            <section class="contact-form">
+              <h1>Contact Us</h1>
+              <form action="submit_form.php" method="post">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label>Purpose of Message</label>
+                  <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                  <label for="inquiry">General Inquiry</label>
+                  
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                  
+                  <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                  <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                  
+                  <button type="submit" class="submit-button">Submit</button>
+              </form>
           </section>
+            <section class="contact-info">
+                <h1>Contact Life Adventure Rafting</h1>
+                <address>
+                    <p>purok 3 guinatan</p>
+                    <p>Isabela cagayan, Ilagan city</p>
+                </address>
+                <p>Phone: 09275366172</p>
+                <p>Email: Lifeadventure1400@gmail.com</p>
+                <section class="employee-profiles">
+                  <h1>Meet Our Happy Team</h1>
+                  <div class="employee">
+                      <img src="images/happyemployee1.jpg" alt="Employee 1">
+                      <p>Jesicca are happy to help you</p>
+                  </div>
+                  <div class="employee">
+                      <img src="images/happyemployee2.jpg" alt="Employee 2">
+                      <p>We care about your satisfaction</p>
+                  </div>
+                  <div class="employee">
+                      <img src="images/happyemployee3.jpg" alt="Employee 3">
+                      <p>Safety Officer</p>
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487885.6991487395!2d121.7745907554431!3d17.189317059667633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338569edf17cbf2d%3A0x31db95e20b6b1064!2sIlagan%2C%20Isabela!5e0!3m2!1sen!2sph!4v1697177395363!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         </main>
         <footer> <!--Footer part-->
             <p>&copy; <span id="copyright-year">2023</span> Life adventures. All rights reserved. | Christian Mendoza</p>
