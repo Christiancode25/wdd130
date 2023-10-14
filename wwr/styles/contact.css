@@ -193,7 +193,6 @@ footer {
     color: #0077ff;
 }
 
-/* Additional style for social media icons */
 .sociallinks img {
     width: 32px;
     height: 32px;
@@ -204,3 +203,25 @@ footer {
 .sociallinks img:hover {
     transform: scale(1.2);
 }
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  section .employee-profiles {
+    flex: 1;
+  padding: 10px;
+  text-align: center;
+  }
+  div img{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+  }
+  map {
+    flex: 1;
+    text-align: center;
+  }
