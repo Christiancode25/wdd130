@@ -1,282 +1,274 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital@0;1&display=swap');
+
 :root {
-  /* Primary Colors */
-  --primary-background-color: #f0f0f0;
-  --primary-text-color: #333;
-  --primary-link-color: #0077ff;
+  --primary-color: #3498db;
+  --secondary-color: #ff6f61;
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --footer-background: #222222;
+  --footer-text: #fff;
+}
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px; /*adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+  }
+  
+  header {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+  }
+  
+  .hero {
+    color: var(--hero-text-color);
+  }
+  
+  footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+  }
+  
+  .sociallinks a {
+    color: var(--social-link-color);
+    text-decoration: none;
+  }
+  h1 {
+    color: #333; /*font color */
+  }
+  
+  p {
+    color: #555; /* font color */
+  }
+  
+  a {
+    color: var(--primary-link-color);
+    text-decoration: none;
+  }
+  /* Style the hero container */
+  .hero {
+    position: relative;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  .hero h1 {
+    position: absolute; /*h1 absolutely */
+    top: 10%; /* Adjust the top value to position the h1 as needed */
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white; 
+    font-size: 36px; 
+    background-color: #333;
+    padding: 10px 20px; 
+  }
+  article {
+    position: absolute;
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: solid white; 
+    background-color: #333;
+    padding: 10px 20px; 
+    opacity: 70%;
+  }
+  article p {
+    color: white;
+  }
+  article img.float-right {
+    float: right;
+    margin-left: 25px; 
+    max-width: 45%; 
+  }
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add padding to create space around content */
+  }
+  
+  /* Style the copyright year span */
+  #copyright-year {
+    font-weight: bold;
+  }
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Create a grid container for the header content */
+  .header-container {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    padding: 0px;
+    margin: 0;
+    
+  }
+  
+  /* Style the logo */
+  .logo img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  /* Style the navigation */
+  .nav ul {
+    list-style: none;
+    display: grid;
+    justify-content:center;
+    row-gap: 10px;
+  }
+  
+  .nav li {
+    margin: 0 auto;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+    padding: 15px;
+    display: block;
+    text-align: center;
 
-  /* Header Colors */
-  --header-background-color: #333;
-  --header-text-color: #fff;
-
-  /* Hero Section Colors */
-  --hero-text-color: #fff;
-  --hero-image-max-height: 300px;
-
-  /* Footer Colors */
-  --footer-background-color: #333;
-  --footer-text-color: #fff;
-
-  /* Social Links Colors */
-  --social-link-color: #fff;
-}
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  max-width: 1200px; /*adjust the maximum width as needed */
-  margin: 0 auto;
-  padding: 0 20px;
-}
-body {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-}
-
-header {
-  background-color: var(--header-background-color);
-  color: var(--header-text-color);
-}
-
-.hero {
-  color: var(--hero-text-color);
-}
-
-footer {
-  background-color: var(--footer-background-color);
-  color: var(--footer-text-color);
-}
-
-.sociallinks a {
-  color: var(--social-link-color);
-  text-decoration: none;
-}
-h1 {
-  color: #333; /*font color */
-}
-
-p {
-  color: #555; /* font color */
-}
-
-a {
-  color: var(--primary-link-color);
-  text-decoration: none;
-}
-/* Style the hero container */
-.hero {
-  position: relative;
-}
-.hero img {
-  width: 100%;
-  height: auto;
-}
-.hero h1 {
-  position: absolute; /*h1 absolutely */
-  top: 10%; /* Adjust the top value to position the h1 as needed */
-  left: 50%; 
-  transform: translateX(-50%); 
-  color: white; 
-  font-size: 36px; 
-  background-color: #333;
-  padding: 10px 20px; 
-}
-article {
-  position: absolute;
-  bottom: 10%; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  color: solid white; 
-  background-color: #333;
-  padding: 10px 20px; 
-  opacity: 70%;
-}
-article p {
-  color: white;
-}
-article img.float-right {
-  float: right;
-  margin-left: 25px; 
-  max-width: 45%; 
-}
-/* Style the footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0; /* Add padding to create space around content */
-}
-
-/* Style the copyright year span */
-#copyright-year {
-  font-weight: bold;
-}
-/* Style the header */
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-/* Create a grid container for the header content */
-.header-container {
-  display: grid;
-  grid-template-columns: auto 1fr; 
-  align-items: center; 
-  padding: 20px 0;
-}
-
-/* Style the logo */
-.logo img {
-  max-width: 100%; 
-  height: auto;
-  display: block; 
-  margin: 0 auto; 
-}
-
-/* Style the navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end; 
-  gap: 5px;
-  padding: 0; 
-
-}
-
-nav li {
-  margin: 0 auto;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold; 
-}
-/* Style the navigation links on hover */
-nav a:hover {
-  color: #0077ff; 
-}
-/* Style the "History" section */
-.adventures-section {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.adventures-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.adventures-container h2 {
-  font-size: 28px;
-  margin-top: 20px;
-  color: #333; 
-  text-transform: uppercase; 
-}
-
-/* Style the paragraph text */
-.adventures-container p {
-  font-size: 18px; 
-  line-height: 1.6;
-  color: #666; 
-  max-width: 800px; 
-  margin: 20px 0;
-}
-
-/* Style the image gallery */
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.image-gallery figure {
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden; 
-}
-
-.image-gallery img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s;
-  object-fit: cover; 
-}
-
-.image-gallery figcaption {
-  font-size: 16px; 
-  margin-top: 10px;
-  color: #555; 
-}
-
-/* Hover effect for images */
-.image-gallery figure:hover img {
-  transform: scale(1.1); 
-  cursor: pointer;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
+  }
+  /* Style the navigation links on hover */
+  nav a:hover {
+    color: #0077ff; 
+  }
+  /* Style the "History" section */
+  .adventures-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .adventures-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
   .adventures-container h2 {
-    font-size: 24px; 
+    font-size: 28px;
+    margin-top: 20px;
+    color: #333; 
+    text-transform: uppercase; 
   }
-
+  
+  /* Style the paragraph text */
   .adventures-container p {
-    font-size: 16px; 
+    font-size: 18px; 
+    line-height: 1.6;
+    color: #666; 
+    max-width: 800px; 
+    margin: 20px 0;
   }
-}
-/* Style the footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Style the copyright year span */
-#copyright-year {
-  font-weight: bold;
-}
-
-/* Style the social media links */
-.sociallinks {
-  display: flex; /* Arrange social links horizontally */
-  align-items: center; /* Vertically center the social links */
-  margin-right: 20px; /* Add some spacing to separate from the copyright text */
-}
-
-.sociallinks a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px; /* Add spacing between social links */
-}
-
-/* Style the social media icons */
-.sociallinks img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Additional styles for individual social media links */
-.sociallinks a:hover {
-  color: #0077ff; /* Change color on hover for links */
-}
-footer p {
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: large;
-  color: #f0f0f0;
-}
+  
+  /* Style the image gallery */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .image-gallery figure {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    object-fit: cover; 
+  }
+  
+  .image-gallery figcaption {
+    font-size: 16px; 
+    margin-top: 10px;
+    color: #555; 
+  }
+  
+  /* Hover effect for images */
+  .image-gallery figure:hover img {
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .adventures-container h2 {
+      font-size: 24px; 
+    }
+  
+    .adventures-container p {
+      font-size: 16px; 
+    }
+  }
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the copyright year span */
+  #copyright-year {
+    font-weight: bold;
+  }
+  
+  /* Style the social media links */
+  .sociallinks {
+    display: flex; /* Arrange social links horizontally */
+    align-items: center; /* Vertically center the social links */
+    margin-right: 20px; /* Add some spacing to separate from the copyright text */
+  }
+  
+  .sociallinks a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Add spacing between social links */
+  }
+  
+  /* Style the social media icons */
+  .sociallinks img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Additional styles for individual social media links */
+  .sociallinks a:hover {
+    color: #0077ff; /* Change color on hover for links */
+  }
+  footer p {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: large;
+    color: #f0f0f0;
+  }

@@ -1,0 +1,201 @@
+/* Style the Call to Action section */
+.call-to-action {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .call-to-action p {
+    font-size: 16px;
+  }
+  
+  /* Style the "Explore" button */
+  .call-to-action .button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .call-to-action .button:hover {
+    background-color: #ff5722; /* Add a hover effect */
+  }
+  
+  /* Style the Trip Descriptions section */
+  .trip-descriptions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  
+  .trip-descriptions article {
+    width: 30%; /* Adjust width as needed */
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .trip-descriptions h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .trip-descriptions img {
+    max-width: 100%;
+  }
+  
+  /* Style the Trip Table */
+  .trip-table {
+    text-align: center;
+  }
+  
+  .trip-table h2 {
+    font-size: 24px;
+  }
+  
+  .trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .trip-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  /* Style the table rows with alternate background colors */
+  .trip-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add hover effect on table rows */
+  .trip-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add padding to create space around content */
+  }
+  /* Style the copyright year span */
+  #copyright-year {
+    font-weight: bold;
+  }
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Create a grid container for the header content */
+  .header-container {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    padding: 0px;
+    margin: 0;
+    
+  }
+  
+  /* Style the logo */
+  .logo img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  /* Style the navigation */
+  .nav ul {
+    list-style: none;
+    display: grid;
+    justify-content:center;
+    row-gap: 10px;
+  }
+  
+  .nav li {
+    margin: 0 auto;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+  }
+  /* Style the navigation links on hover */
+  nav a:hover {
+    color: #0077ff; 
+  }
+/* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the copyright year span */
+  #copyright-year {
+    font-weight: bold;
+  }
+  
+  /* Style the social media links */
+  .sociallinks {
+    display: flex; /* Arrange social links horizontally */
+    align-items: center; /* Vertically center the social links */
+    margin-right: 20px; /* Add some spacing to separate from the copyright text */
+  }
+  
+  .sociallinks a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Add spacing between social links */
+  }
+  
+  /* Style the social media icons */
+  .sociallinks img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Additional styles for individual social media links */
+  .sociallinks a:hover {
+    color: #0077ff; /* Change color on hover for links */
+  }
+  footer p {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: large;
+    color: #f0f0f0;
+  }
