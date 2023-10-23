@@ -75,7 +75,7 @@
     bottom: 10%; 
     left: 50%; 
     transform: translateX(-50%); 
-    color: solid white; 
+    color: yellow; 
     background-color: #333;
     padding: 10px 20px; 
     opacity: 70%;
@@ -272,3 +272,64 @@
     font-size: large;
     color: #f0f0f0;
   }
+  /* Style the adventures section */
+.adventures-section {
+  text-align: center;
+  background-color: #f9f9f9; /* Light gray background color */
+  padding: 40px 0;
+}
+
+/* Style section headings */
+.adventures-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0077ff; /* Highlight the heading color */
+}
+
+/* Style the adventures container */
+.adventures-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style the text content */
+.adventures-container p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333; /* Dark gray text color */
+}
+
+/* Style the image gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Style individual image captions */
+.image-gallery figure {
+  text-align: center;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle image shadow */
+}
+
+.image-gallery figcaption {
+  font-size: 14px;
+  color: #777; /* Light gray caption text color */
+  margin-top: 5px;
+}
+body {
+  background-color: #f2f2f2; /* Light gray background color */
+}
+ /* Add hover effects for buttons and links */
+ cta-button:hover, nav a:hover {
+  background-color: #030608;
+}

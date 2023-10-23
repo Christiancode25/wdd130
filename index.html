@@ -1,45 +1,64 @@
-<!-- 27 September 2023-->
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Christian Mendoza | WDD130 </title>
-        <meta name="description" content="christian Mendoza BYU-Idaho WDD130 course home page">
-        <meta name="author" content="Christian Mendoza">  
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-            <a href="#">Home</a>
-            <a href="wwr/about.html">White water Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-            <a href="https://linkedin.com">linkedin</a>
-            <a href="https://facebook.com">facebook</a>
-            </nav> 
-        </header>
-        <div class="grid">
-        <main>
-            <h1>Christian Mendoza | WDD130 </h1>
-            <img src="images/profile.jpg" alt="Hello my name is Christian mendoza" width="200">
-            <p>Hello My name is Christian and I am from philippines, I love playing basketball and video games. I also love reading books ofcourse reading book of mormon and other spiritual books i always read it everyday. I love to learn coding and I know it is not east road but I am willing to learn and grow whatever happens.
-                Meet Christian, a passionate individual with an insatiable thirst for knowledge and personal growth. With an unwavering commitment to expanding their horizons, Christian embodies the essence of a lifelong learner. Every day is an opportunity for them to delve into new subjects, explore fresh perspectives, and embrace challenges as stepping stones towards self-improvement. Their dedication to personal and intellectual development is not just a habit; it's a way of life. In christian's world, the pursuit of knowledge is a thrilling adventure, and their enthusiasm is both contagious and inspiring to those fortunate enough to share in their journey of learning and growth.
-            </p>
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/manila-philippines-temple?lang=eng" target="_blank">Manila Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/bacolod-philippines-temple?lang=eng" target="_blank">Bacolod Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/cebu-city-philippines-temple?lang=eng" target="_blank">Cebu Temple</a></li>
-            </ul> 
-        </main>
-        <aside class="box">
-            <h2>Philippines</h2>
-            <img src="images/beach.jpg" alt="one of the beach in the philippines">
-            <p>The Philippines, located in Southeast Asia, is a tropical paradise known for its stunning natural beauty. With its idyllic beaches, crystal-clear waters, and lush rainforests, it's a dream destination for travelers. </p>
-        </aside>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Mendoza | WDD130</title>
+    <meta name="description" content="Christian Mendoza BYU-Idaho WDD130 course home page">
+    <meta name="author" content="Christian Mendoza">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="wwr/about.html">White Water Rafting Website</a>
+        <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://facebook.com">Facebook</a>
+      </nav>
+    </header>
+    <div class="grid">
+      <main>
+        <section class="full-width-image">
+          <h2>Welcome to Our Adventure</h2>
+          <img src="images/adventure.jpg" alt="Adventure">
+        </section>
+        <section class="newsletter-signup">
+          <h2>Subscribe to Our Newsletter</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+        <section class="call-to-action">
+          <h2>Ready for an Adventure?</h2>
+          <p>Explore our thrilling trips and get ready for an unforgettable experience!</p>
+          <a href="wwr/trips.html" class="cta-button">Visit Trips Page</a>
+        </section>
+      </main>
+      <aside class="box">
+        <h2 class="overlay-heading">Philippines</h2>
+        <img src="images/beach.jpg" alt="One of the beaches in the Philippines">
+        <p>The Philippines, located in Southeast Asia, is a tropical paradise known for its stunning natural beauty. With its idyllic beaches, crystal-clear waters, and lush rainforests, it's a dream destination for travelers.</p>
+      </aside>
+      <section class="grid-content">
+        <div class="grid-item">
+          <img src="images/rafting1.webp" alt="White Water Rafting 1">
+          <p>Experience the thrill of white water rafting with our expert guides. Get ready for an adrenaline-pumping adventure!</p>
         </div>
-        <footer>
-            <p>&#169; 2023 &#174; Christian Mendoza &#174; Isabela, philippines</p>
-        </footer>
-    </body>
+        <div class="grid-item">
+          <img src="images/rafting2.jpg" alt="White Water Rafting 2">
+          <p>Our rafting trips are suitable for all levels, from beginners to experienced rafters. Join us for a memorable journey.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&#169; 2023 &#174; Christian Mendoza &#174; Isabela, Philippines</p>
+    </footer>
+  </body>
 </html>
